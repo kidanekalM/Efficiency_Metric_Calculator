@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efficiency Metric Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1 class="title"> Efficiency Metric Calculator</h1>
     <div class="wrapper">
         <table>
             <tr>
@@ -18,7 +20,7 @@
             
         </table>
         <aside>
-            <form action="post">
+            <div id="form">
                 <div class="formField">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
@@ -32,14 +34,19 @@
                     <input type="number" name="cost" id="cost">
                 </div>
                 <div class="formField">
-                    <label for="volume">Volume</label>
-                    <input type="number" name="volume" id="volume">
+                    <label for="diameter">Diameter</label>
+                    <input type="number" name="diameter" id="diameter">
                 </div>
                 <div class="formField">
-                    <button type="submit">Calculate</button>
+                    <label for="height">Height</label>
+                    <input type="number" name="height" id="height">
                 </div>
-            </form>
+                <div class="formField">
+                    <button id="calculate">Calculate</button>
+                </div>
+            </div>
         </aside>
     </div>
 </body>
 </html>
+<script src="index.js"></script>
